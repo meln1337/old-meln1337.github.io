@@ -11,7 +11,7 @@ $('.mobile-menu').on('click', function (e) {
   } else {
     $('.nav').css('opacity', 0);
     $('body').css('height', 'auto');
-    $('body').css('position', 'block');
+    $('body').css('position', 'relative');
     a = 0;
     $('.menu-btn').toggleClass('menu-active');
   }
