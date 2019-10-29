@@ -1,0 +1,324 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+    section.the__part
+        .inputs
+            justify-content: center
+            .article
+                width: 260px !important
+            .price__tel
+                width: 180px !important
+            .know__price
+                width: 260px !important
+    section.questions
+        .col-lg-6
+            > img
+                width: 100%
+    section.stock
+        img
+            width: 100%
+
+// ≥992px
++media-breakpoint-down(md)
+    section.price
+        input.price__tel
+            width: 190px
+            font-size: 12px
+        input.price__email
+            width: 190px !important
+        .email__img
+            padding: 10px
+            padding-right: 30px
+        .col-md-auto
+            button.price__get__btn
+                width: 250px
+                font-size: 12px
+    section.spare__parts
+        .col-md-12 > div > p
+            font-size: 16px
+    section.the__part
+        .inputs
+            > .d-flex
+                width: 100%                
+            .article
+                width: 100% !important
+            .know__price
+                width: 100% !important
+                margin-left: 0
+                height: 70px
+                margin-top: 10px
+            .price__tel
+                width: 100% !important
+                margin-left: 0
+                margin-top: 10px
+            .well__call
+                display: none
+            .ill__call
+                display: none
+            .email__img
+                height: 70px
+                margin-top: 10px
+    section.system
+        p
+            font-size: 14px
+    section.questions
+        height: 1350px
+        .align-items-baseline
+            justify-content: center
+        .col-auto
+            order: 2
+    section.mobile__teams
+        height: 880px
+        p
+            font-size: 18px
+    section.free__consultation
+        background-size: cover
+        height: 600px
+        .col-md-auto
+            width: 100%
+            .price__tel
+                width: 100%
+            .know__price
+                width: 100% !important
+                margin-top: 10px
+
+// ≥768px
++media-breakpoint-down(sm)
+    .header__logo p
+        display: none
+    .header__logo
+        width: auto
+    header .header__work
+        width: auto
+        p
+            font-size: 12px
+            margin-bottom: 0 !important
+    .header-contacts-wrapper
+        width: auto
+        .contacts
+            font-size: 14px
+    section.price
+        .price__to__email__wrapper
+            justify-content: center !important
+            flex-direction: row !important
+            .col-md-auto
+                width: auto
+                button.price__get__btn
+                    width: 185px
+        .row
+            .email__img-2
+                height: 70px !important
+                margin-top: 20px !important
+            .price__get
+                justify-content: center !important
+                h1
+                    text-align: center
+            .col-md-12
+                flex-direction: column !important
+                justify-content: center !important
+            input.price__tel
+                width: 100% !important
+                font-size: 12px
+                margin-left: 0
+                margin-top: 20px
+            input.price__email
+                width: 100% !important
+                font-size: 12px
+            .price__inputs
+                margin-top: 40px
+    section.spare__parts
+        .col-md-12 > div >
+            img
+                height: 70px
+            p
+                font-size: 12px
+    section.the__part
+        h1
+            text-align: center
+    section.we__guarantee
+        height: 1900px
+        .we__guarantee__row
+            flex-direction: column
+            .col-md-4
+                margin-top: 40px
+    section.system
+        height: 1480px
+        .icons__system
+            margin-top: 60px
+        .col-md-3
+            margin-top: 40px
+        p
+            font-size: 18px
+    section.questions
+        height: 1200px
+    section.convenient__to__work
+        height: 1100px
+        .col-md-4
+            margin-top: 40px
+        .first
+            margin-top: 60px
+        .seventeen__per
+            text-align: center
+    section.stock
+        height: 1100px
+        h1
+            text-align: center
+        img
+            width: 300px
+        .col-md-4
+            justify-content: center
+            margin-top: 40px
+        p
+            font-size: 16px
+    section.mobile__teams
+        height: 1550px
+        .mobile__teams__icons
+            .col-md-4
+                margin-top: 40px
+    section.free__consultation
+        h1
+            font-size: 24px
+    section.come__to__us
+        .col-md-auto
+            width: auto
+    footer
+        .col-md-auto
+            width: auto
+
+// ≥576px
++media-breakpoint-down(xs)
+    header .header-btn button
+        padding: 15px calc(100vw / 20)
+        width: 140px
+        font-size: 8px
+    header .header__work
+        display: none !important
+    header .contacts a
+        font-size: calc(100vw / 37.64) !important
+    .header__wrapper
+        justify-content: center !important
+    section.info
+        .row
+            justify-content: center
+        .yellow
+            height: 1150px
+            h1
+                font-size: calc(100vw / 13)
+                text-align: center
+            h4
+                font-size: calc(100vw / 18)
+                text-align: center
+            .titles nav
+                margin-top: 60px
+                .d-flex
+                    justify-content: center !important
+                    align-items: center !important
+                    flex-direction: column
+                    p
+                        font-size: calc(100vw / 23)
+                        text-align: center
+                        margin-top: 20px
+                        margin-left: 0
+                    img
+                        width: 40px
+                        height: 40px
+    section.price
+        h1
+            font-size: 20px
+        .price__to__email__wrapper
+            justify-content: center !important
+            margin-top: 30px
+            .col-md-auto
+                P
+                    font-size: 10px
+                    margin-left: 0
+                img
+                    display: none
+                button.price__get__btn
+                    width: 100px !important
+                    font-size: 10px
+                    height: 50px
+                    margin-left: 0
+                    margin-right: 0
+    section.spare__parts
+        height: 1250px
+        h1
+            text-align: center
+            font-size: 30px
+        .col-md-12
+            flex-direction: column
+            margin-top: 90px
+            div
+                margin-top: 40px
+                img
+                    height: 70px
+                p
+                    font-size: 18px
+    section.the__part
+        .inputs
+            .article
+                margin-left: 10px
+                margin-right: 10px
+            .price__tel
+                margin-left: 10px
+            .email__img
+                margin-right: 10px !important
+            .know__price
+                margin-left: 10px
+                margin-right: 10px
+        p
+            font-size: 16px
+        h1
+            font-size: 24px
+    section.we__guarantee
+        h1
+            font-size: 24px
+        p
+            font-size: 16px
+    section.system
+        height: 1400px
+        h1
+            font-size: 24px
+    section.questions
+        ol
+            text-align: center
+        .col-12
+            justify-content: center
+            display: flex
+            img
+                width: 290px !important
+        li
+            width: 250px
+    section.convenient__to__work
+        height: 1050px
+        h1
+            font-size: 24px
+            text-align: center
+        p
+            font-size: 14px
+    section.mobile__teams
+        h1
+            font-size: 24px
+    section.come__to__us
+        h1
+            font-size: 20px
+        p
+            font-size: 14px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
