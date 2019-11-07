@@ -10,6 +10,7 @@ header
     .container
         grid-template-areas: "logo nav" "img img"
         grid-template-columns: 1fr 5fr
+        grid-template-rows: auto calc(100vh - 100px)
         align-items: center
         padding: 20px
 
@@ -41,6 +42,7 @@ header
     width: 100%
     height: auto
     max-width: 750px
+    align-self: end
 
 .mobile-menu
 	display: none
