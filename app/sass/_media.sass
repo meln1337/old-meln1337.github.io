@@ -9,6 +9,11 @@
         .icons
             grid-template-columns: 1fr 1fr 1fr
 
+    .why-me
+        .grid
+            .item
+                grid-template-rows: 150px auto
+
 // ≥992px
 +media-breakpoint-down(md)
     .cv
@@ -20,12 +25,25 @@
                 img
                     justify-self: center
 
+    .why-me
+        .grid
+            .item
+                grid-template-rows: 100px auto
+            img
+                height: 100px
+            p
+                font-size: 14px
+
 // ≥768px
 +media-breakpoint-down(sm)
     .nav
         display: none
     .mobile-menu
         display: block
+        .menu-btn
+            width: 40px
+            height: 40px
+            display: block
     header
         .container
             .mobile-menu
@@ -34,6 +52,19 @@
     .my-skills
         .icons
             grid-template-columns: 1fr 1fr
+
+    .why-me
+        .grid
+            grid-template-columns: 1fr
+            padding: 20px
+            .item
+                grid-template-rows: 200px auto
+                img
+                    height: 200px
+                p
+                    font-size: 16px
+                    margin-top: 40px
+                    margin-bottom: 40px
 
 // ≥576px
 +media-breakpoint-down(xs)
@@ -45,6 +76,11 @@
         .container
             padding: 20px
 
+    .why-me
+        .container
+            padding: 0 20px
+        h1
+            font-size: 22px
 
 /*==========  Mobile First  ==========*/
 
