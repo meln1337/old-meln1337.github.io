@@ -5,9 +5,20 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+    .my-skills
+        .icons
+            grid-template-columns: 1fr 1fr 1fr
 
 // ≥992px
 +media-breakpoint-down(md)
+    .cv
+        .container
+            grid-template-areas: "resume" "skills"
+            grid-template-columns: 1fr
+            grid-template-rows: 1fr
+            .resume
+                img
+                    justify-self: center
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -19,9 +30,20 @@
         .container
             .mobile-menu
                 justify-self: end
+    
+    .my-skills
+        .icons
+            grid-template-columns: 1fr 1fr
 
 // ≥576px
 +media-breakpoint-down(xs)
+    .my-skills
+        .icons
+            grid-template-columns: 1fr
+
+    .cv
+        .container
+            padding: 20px
 
 
 /*==========  Mobile First  ==========*/
